@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GroupCell" id="gTV-IL-0wX" customClass="GroupCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lAK-ws-ute">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Fnv-v4-amp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三人团" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g0-nQ-3ZJ">
+                        <rect key="frame" x="20" y="155" width="335" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="kSy-ha-4UA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="养肝护胆，免疫调节，包邮特卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBR-zJ-VTQ">
+                        <rect key="frame" x="20" y="180" width="335" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XhI-0i-84A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拼团价:¥65.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p89-d4-bLA">
+                        <rect key="frame" x="20" y="215" width="120" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eJK-qY-pJU"/>
+                            <constraint firstAttribute="width" constant="120" id="uI4-3C-gmv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-4x-cI7">
+                        <rect key="frame" x="295" y="200" width="60" height="35"/>
+                        <color key="backgroundColor" red="1" green="0.30385253029999998" blue="0.31321489530000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="MwI-n7-Jvy"/>
+                            <constraint firstAttribute="width" constant="60" id="Xs7-ou-ovc"/>
+                        </constraints>
+                        <state key="normal" title="去开团">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单买价：人民币56.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZj-dQ-DTV">
+                        <rect key="frame" x="145" y="215" width="140" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8ac-0f-s1q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lAK-ws-ute" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="093-Ot-ZeI"/>
+                <constraint firstAttribute="trailing" secondItem="lAK-ws-ute" secondAttribute="trailing" id="19Y-Um-Py0"/>
+                <constraint firstItem="kBR-zJ-VTQ" firstAttribute="top" secondItem="0g0-nQ-3ZJ" secondAttribute="bottom" constant="5" id="3iV-Ni-zWI"/>
+                <constraint firstItem="0Tf-4x-cI7" firstAttribute="top" secondItem="kBR-zJ-VTQ" secondAttribute="bottom" id="5gZ-5c-yrG"/>
+                <constraint firstAttribute="trailing" secondItem="0Tf-4x-cI7" secondAttribute="trailing" constant="20" id="7vn-qv-3cQ"/>
+                <constraint firstItem="pZj-dQ-DTV" firstAttribute="leading" secondItem="p89-d4-bLA" secondAttribute="trailing" constant="5" id="9HG-4x-ILC"/>
+                <constraint firstAttribute="bottom" secondItem="p89-d4-bLA" secondAttribute="bottom" constant="15" id="CvX-lx-fj7"/>
+                <constraint firstAttribute="bottom" secondItem="0Tf-4x-cI7" secondAttribute="bottom" constant="15" id="PbI-gg-CDX"/>
+                <constraint firstItem="p89-d4-bLA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Q1I-fB-ZH4"/>
+                <constraint firstItem="0g0-nQ-3ZJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="QzA-3l-YEZ"/>
+                <constraint firstItem="p89-d4-bLA" firstAttribute="top" secondItem="kBR-zJ-VTQ" secondAttribute="bottom" constant="15" id="Tnc-96-rMa"/>
+                <constraint firstItem="0Tf-4x-cI7" firstAttribute="leading" secondItem="pZj-dQ-DTV" secondAttribute="trailing" constant="10" id="a4B-4a-vth"/>
+                <constraint firstItem="kBR-zJ-VTQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="aWK-3G-3Y8"/>
+                <constraint firstAttribute="bottom" secondItem="pZj-dQ-DTV" secondAttribute="bottom" constant="15" id="fch-ge-yxM"/>
+                <constraint firstItem="0g0-nQ-3ZJ" firstAttribute="top" secondItem="lAK-ws-ute" secondAttribute="bottom" constant="5" id="hiw-Yf-qxP"/>
+                <constraint firstItem="lAK-ws-ute" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mqG-XH-NwM"/>
+                <constraint firstAttribute="trailing" secondItem="0g0-nQ-3ZJ" secondAttribute="trailing" constant="20" id="sOB-An-iYo"/>
+                <constraint firstAttribute="trailing" secondItem="kBR-zJ-VTQ" secondAttribute="trailing" constant="20" id="xlK-fu-UNm"/>
+            </constraints>
+            <size key="customSize" width="167" height="50"/>
+            <connections>
+                <outlet property="buyBtn" destination="0Tf-4x-cI7" id="tOo-yD-s4D"/>
+                <outlet property="firstLab" destination="0g0-nQ-3ZJ" id="XHx-1V-yxU"/>
+                <outlet property="fourdLab" destination="pZj-dQ-DTV" id="sZH-bV-9cX"/>
+                <outlet property="secondLab" destination="kBR-zJ-VTQ" id="Ewt-SV-d5b"/>
+                <outlet property="threedLab" destination="p89-d4-bLA" id="WuJ-rY-a77"/>
+                <outlet property="topImage" destination="lAK-ws-ute" id="CFz-SK-Fly"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="23"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="2.jpg" width="1024" height="640"/>
+    </resources>
+</document>

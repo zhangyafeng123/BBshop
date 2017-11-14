@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newcell" id="gTV-IL-0wX" customClass="pintuanNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chengyuan" translatesAutoresizingMaskIntoConstraints="NO" id="XGk-ip-CeN">
+                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Is-yg-r4H">
+                        <rect key="frame" x="20" y="0.0" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="82O-cR-ED2"/>
+                            <constraint firstAttribute="width" constant="25" id="gfD-LC-RHn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <state key="normal" title="团长" backgroundImage="tuanzhang">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9Is-yg-r4H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QC2-pk-QrD"/>
+                <constraint firstItem="XGk-ip-CeN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YAK-Nz-1AX"/>
+                <constraint firstAttribute="trailing" secondItem="9Is-yg-r4H" secondAttribute="trailing" id="jG6-oj-QM4"/>
+                <constraint firstAttribute="bottom" secondItem="XGk-ip-CeN" secondAttribute="bottom" id="k0d-Hh-5uu"/>
+                <constraint firstAttribute="trailing" secondItem="XGk-ip-CeN" secondAttribute="trailing" id="m1K-A4-D3J"/>
+                <constraint firstItem="XGk-ip-CeN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zSh-oZ-glz"/>
+            </constraints>
+            <connections>
+                <outlet property="bigimage" destination="XGk-ip-CeN" id="Rdo-SQ-RP6"/>
+                <outlet property="smallbutton" destination="9Is-yg-r4H" id="Nw6-YK-bKY"/>
+            </connections>
+            <point key="canvasLocation" x="-69" y="42"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chengyuan" width="55" height="55"/>
+        <image name="tuanzhang" width="31" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="message" id="KGk-i7-Jjw" customClass="safeMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1m-B7-EyJ">
+                        <rect key="frame" x="306" y="6" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="G08-pl-8pG"/>
+                            <constraint firstAttribute="width" constant="49" id="X9L-Qm-vl4"/>
+                        </constraints>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M9-eH-VR0">
+                        <rect key="frame" x="20" y="11.5" width="276" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="btc-fd-maH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4M9-eH-VR0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4X8-IA-Shz"/>
+                    <constraint firstItem="Z1m-B7-EyJ" firstAttribute="leading" secondItem="4M9-eH-VR0" secondAttribute="trailing" constant="10" id="ZFB-1b-sTu"/>
+                    <constraint firstAttribute="trailing" secondItem="Z1m-B7-EyJ" secondAttribute="trailing" constant="20" id="c5J-bD-hz1"/>
+                    <constraint firstItem="4M9-eH-VR0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dfd-Ae-9I7"/>
+                    <constraint firstItem="Z1m-B7-EyJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gLd-om-PnD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="NewSwitch" destination="Z1m-B7-EyJ" id="rlg-4q-p9b"/>
+                <outlet property="leftLab" destination="4M9-eH-VR0" id="1Fx-n0-oNa"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="47"/>
+        </tableViewCell>
+    </objects>
+</document>

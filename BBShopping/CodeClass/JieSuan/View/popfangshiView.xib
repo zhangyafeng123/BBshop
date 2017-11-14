@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="popfangshiView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02V-8O-Xpf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="HeN-KH-e6v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hI-K8-i96">
+                    <rect key="frame" x="0.0" y="350" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KzH-cC-mPo"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-Ij-Vff">
+                    <rect key="frame" x="0.0" y="50" width="375" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="02V-8O-Xpf" secondAttribute="trailing" id="3O6-Aw-L0U"/>
+                <constraint firstItem="02V-8O-Xpf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5ta-ls-con"/>
+                <constraint firstAttribute="bottom" secondItem="5hI-K8-i96" secondAttribute="bottom" id="IJW-1f-h6t"/>
+                <constraint firstItem="02V-8O-Xpf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lt3-fE-0aD"/>
+                <constraint firstItem="rgE-Ij-Vff" firstAttribute="top" secondItem="02V-8O-Xpf" secondAttribute="bottom" id="PP8-xC-WKW"/>
+                <constraint firstItem="5hI-K8-i96" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZU0-83-Eff"/>
+                <constraint firstItem="rgE-Ij-Vff" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dpd-Xp-ZAq"/>
+                <constraint firstAttribute="trailing" secondItem="rgE-Ij-Vff" secondAttribute="trailing" id="iB8-Gb-PPa"/>
+                <constraint firstItem="5hI-K8-i96" firstAttribute="top" secondItem="rgE-Ij-Vff" secondAttribute="bottom" id="kH1-e0-5ka"/>
+                <constraint firstAttribute="trailing" secondItem="5hI-K8-i96" secondAttribute="trailing" id="rmb-W3-I5U"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="okbutton" destination="5hI-K8-i96" id="2L3-SX-WME"/>
+                <outlet property="poptableView" destination="rgE-Ij-Vff" id="Vbl-Vf-hPF"/>
+            </connections>
+            <point key="canvasLocation" x="-51" y="-164"/>
+        </view>
+    </objects>
+</document>

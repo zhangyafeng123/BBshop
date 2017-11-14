@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="kefuViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加客服微信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-zX-YNM">
+                    <rect key="frame" x="20" y="50" width="335" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0n6-Sh-shh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咨询客服小邦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFt-3f-obi">
+                    <rect key="frame" x="20" y="85" width="335" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="pmG-m5-sf9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在线时间：9：00-24：00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6R-Qu-rRo">
+                    <rect key="frame" x="25" y="120" width="325" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3WD-1H-7VW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二维码" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-Df-MLm">
+                    <rect key="frame" x="127.5" y="165" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="5Bl-5d-ciq"/>
+                        <constraint firstAttribute="height" constant="120" id="zbj-9O-GNS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号：x_chenc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-Oc-PIb">
+                    <rect key="frame" x="20" y="305" width="335" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="fZ8-uF-IhP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服电话：0755-25281116" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPt-Px-z9T">
+                    <rect key="frame" x="20" y="340" width="335" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="li9-qV-vx3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEL:189-3896-5106" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0It-32-9mj">
+                    <rect key="frame" x="20" y="375" width="335" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0Fo-wq-KBN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9U6-zX-YNM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="2VD-4l-lKA"/>
+                <constraint firstItem="rZg-Oc-PIb" firstAttribute="top" secondItem="UJU-Df-MLm" secondAttribute="bottom" constant="20" id="4fh-Fj-6gn"/>
+                <constraint firstAttribute="trailing" secondItem="kFt-3f-obi" secondAttribute="trailing" constant="20" id="4wd-gT-JvX"/>
+                <constraint firstItem="UJU-Df-MLm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GSw-It-zPd"/>
+                <constraint firstAttribute="trailing" secondItem="0It-32-9mj" secondAttribute="trailing" constant="20" id="HMU-Hu-DeT"/>
+                <constraint firstItem="b6R-Qu-rRo" firstAttribute="top" secondItem="kFt-3f-obi" secondAttribute="bottom" constant="10" id="Nnf-dl-85p"/>
+                <constraint firstItem="UJU-Df-MLm" firstAttribute="top" secondItem="b6R-Qu-rRo" secondAttribute="bottom" constant="20" id="U2M-SL-bl2"/>
+                <constraint firstItem="kFt-3f-obi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="X4f-4q-7Sr"/>
+                <constraint firstItem="b6R-Qu-rRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="X7l-nf-zze"/>
+                <constraint firstItem="kFt-3f-obi" firstAttribute="top" secondItem="9U6-zX-YNM" secondAttribute="bottom" constant="10" id="XBl-st-Dib"/>
+                <constraint firstAttribute="trailing" secondItem="b6R-Qu-rRo" secondAttribute="trailing" constant="25" id="Xfp-T2-7fI"/>
+                <constraint firstItem="0It-32-9mj" firstAttribute="top" secondItem="fPt-Px-z9T" secondAttribute="bottom" constant="10" id="YWg-u3-erk"/>
+                <constraint firstItem="fPt-Px-z9T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="aS8-MV-51L"/>
+                <constraint firstItem="fPt-Px-z9T" firstAttribute="top" secondItem="rZg-Oc-PIb" secondAttribute="bottom" constant="10" id="bBO-9F-vFw"/>
+                <constraint firstAttribute="trailing" secondItem="9U6-zX-YNM" secondAttribute="trailing" constant="20" id="baF-11-Y8f"/>
+                <constraint firstItem="0It-32-9mj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="eKu-w0-ISZ"/>
+                <constraint firstAttribute="trailing" secondItem="fPt-Px-z9T" secondAttribute="trailing" constant="20" id="nBi-oF-LCm"/>
+                <constraint firstItem="rZg-Oc-PIb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qdg-S1-nwQ"/>
+                <constraint firstItem="9U6-zX-YNM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="qi9-Ru-daf"/>
+                <constraint firstAttribute="trailing" secondItem="rZg-Oc-PIb" secondAttribute="trailing" constant="20" id="snP-va-6gV"/>
+            </constraints>
+            <point key="canvasLocation" x="-37" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="二维码" width="145" height="146"/>
+    </resources>
+</document>

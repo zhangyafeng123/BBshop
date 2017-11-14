@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePhoneViewController">
+            <connections>
+                <outlet property="phoneLab" destination="MxH-Ie-kna" id="hhc-TX-Uli"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wy-Kc-hfv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-Ie-kna">
+                            <rect key="frame" x="20" y="25" width="335" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="gkN-Pu-rS1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MxH-Ie-kna" secondAttribute="bottom" constant="20" id="MJb-Ia-rik"/>
+                        <constraint firstAttribute="trailing" secondItem="MxH-Ie-kna" secondAttribute="trailing" constant="20" id="SN0-PN-rgi"/>
+                        <constraint firstAttribute="height" constant="70" id="drY-Q9-wpB"/>
+                        <constraint firstItem="MxH-Ie-kna" firstAttribute="leading" secondItem="0Wy-Kc-hfv" secondAttribute="leading" constant="20" id="sgJ-MS-RBY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak8-mP-sZR">
+                    <rect key="frame" x="30" y="100" width="315" height="49"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="eW2-RK-vWT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="更换手机号">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeButtonAction:" destination="-1" eventType="touchUpInside" id="aGg-hD-vHy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Wy-Kc-hfv" secondAttribute="trailing" id="3jQ-7T-4D4"/>
+                <constraint firstItem="Ak8-mP-sZR" firstAttribute="top" secondItem="0Wy-Kc-hfv" secondAttribute="bottom" constant="30" id="8bd-th-gFR"/>
+                <constraint firstItem="0Wy-Kc-hfv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EZW-lw-5H1"/>
+                <constraint firstAttribute="trailing" secondItem="Ak8-mP-sZR" secondAttribute="trailing" constant="30" id="Fkx-0k-g5Q"/>
+                <constraint firstItem="Ak8-mP-sZR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="XWV-nQ-xAj"/>
+                <constraint firstItem="0Wy-Kc-hfv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aN7-3C-3E0"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

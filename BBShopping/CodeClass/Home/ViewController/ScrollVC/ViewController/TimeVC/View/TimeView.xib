@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="timeHeader" id="U6b-Vx-4bR" customClass="TimeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="限时秒杀-1" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-uI-cs6">
+                    <rect key="frame" x="142.5" y="10" width="90" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Dwb-gP-dFP"/>
+                        <constraint firstAttribute="width" constant="90" id="jxf-0v-61h"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离本场开始" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X86-7n-jNb">
+                    <rect key="frame" x="0.0" y="45" width="375" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="glt-mY-MKO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="X86-7n-jNb" secondAttribute="bottom" id="13K-xc-av4"/>
+                <constraint firstItem="X86-7n-jNb" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="37u-Na-pUh"/>
+                <constraint firstAttribute="trailing" secondItem="X86-7n-jNb" secondAttribute="trailing" id="4OY-6N-378"/>
+                <constraint firstItem="dXD-uI-cs6" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="I7Z-DR-srJ"/>
+                <constraint firstItem="dXD-uI-cs6" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="mZw-c9-Hi0"/>
+            </constraints>
+            <connections>
+                <outlet property="leftlabel" destination="X86-7n-jNb" id="pmy-SA-yNb"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="33"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="限时秒杀-1" width="75" height="25"/>
+    </resources>
+</document>

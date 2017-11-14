@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PresentViewController">
+            <connections>
+                <outlet property="tableview" destination="NWX-Fn-FwF" id="pG4-gf-A8E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NWX-Fn-FwF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Uy5-qr-u6L"/>
+                        <outlet property="delegate" destination="-1" id="sGg-5p-10J"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIk-5d-UFT">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="添加礼品卡">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="whJ-uh-Vf7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NWX-Fn-FwF" secondAttribute="bottom" constant="50" id="6Dl-PN-kV5"/>
+                <constraint firstItem="NWX-Fn-FwF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EWA-jw-Gg3"/>
+                <constraint firstAttribute="trailing" secondItem="NWX-Fn-FwF" secondAttribute="trailing" id="IeU-8K-qTF"/>
+                <constraint firstItem="NWX-Fn-FwF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N6l-6H-Oj2"/>
+                <constraint firstItem="SIk-5d-UFT" firstAttribute="top" secondItem="NWX-Fn-FwF" secondAttribute="bottom" id="iwh-EX-8sl"/>
+                <constraint firstAttribute="trailing" secondItem="SIk-5d-UFT" secondAttribute="trailing" id="qcc-tB-A7j"/>
+                <constraint firstAttribute="bottom" secondItem="SIk-5d-UFT" secondAttribute="bottom" id="s4c-zb-oof"/>
+                <constraint firstItem="SIk-5d-UFT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yES-kH-5eW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

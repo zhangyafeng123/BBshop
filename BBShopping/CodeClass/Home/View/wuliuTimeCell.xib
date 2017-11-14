@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timecell" id="KGk-i7-Jjw" customClass="wuliuTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时钟" translatesAutoresizingMaskIntoConstraints="NO" id="jv1-b2-wOE">
+                        <rect key="frame" x="15" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="gYH-Mq-G6s"/>
+                            <constraint firstAttribute="height" constant="25" id="gyw-w0-WqZ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SE-gH-GRX">
+                        <rect key="frame" x="27" y="40" width="1" height="119.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="3ND-CX-yvM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxj-am-Lh5">
+                        <rect key="frame" x="50" y="10" width="305" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gAo-Q3-yZC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-AC-cfU">
+                        <rect key="frame" x="48" y="45" width="307" height="104.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fN3-ci-OXL">
+                                <rect key="frame" x="5" y="5" width="93.5" height="94.5"/>
+                                <color key="backgroundColor" red="1" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fN3-ci-OXL" secondAttribute="height" multiplier="96:97" id="5JP-8Z-vOb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单已经发货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktq-7i-JGS">
+                                <rect key="frame" x="108.5" y="10" width="178.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uh-pU-LtU">
+                                <rect key="frame" x="109" y="50" width="178" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fN3-ci-OXL" firstAttribute="leading" secondItem="vhE-AC-cfU" secondAttribute="leading" constant="5" id="0oz-pa-bvJ"/>
+                            <constraint firstItem="9uh-pU-LtU" firstAttribute="leading" secondItem="fN3-ci-OXL" secondAttribute="trailing" constant="10" id="1ZX-Q0-YGb"/>
+                            <constraint firstItem="9uh-pU-LtU" firstAttribute="top" secondItem="vhE-AC-cfU" secondAttribute="top" constant="50" id="7B5-0a-9Jk"/>
+                            <constraint firstItem="Ktq-7i-JGS" firstAttribute="leading" secondItem="fN3-ci-OXL" secondAttribute="trailing" constant="10" id="9Hc-Wr-HAf"/>
+                            <constraint firstItem="Ktq-7i-JGS" firstAttribute="top" secondItem="vhE-AC-cfU" secondAttribute="top" constant="10" id="GtF-Ms-dR2"/>
+                            <constraint firstItem="fN3-ci-OXL" firstAttribute="top" secondItem="vhE-AC-cfU" secondAttribute="top" constant="5" id="Q6s-0S-eQv"/>
+                            <constraint firstAttribute="trailing" secondItem="9uh-pU-LtU" secondAttribute="trailing" constant="20" id="bCn-yX-tA9"/>
+                            <constraint firstAttribute="bottom" secondItem="fN3-ci-OXL" secondAttribute="bottom" constant="5" id="dlF-96-Rom"/>
+                            <constraint firstAttribute="trailing" secondItem="Ktq-7i-JGS" secondAttribute="trailing" constant="20" id="rCS-gT-nkV"/>
+                            <constraint firstItem="9uh-pU-LtU" firstAttribute="bottom" secondItem="fN3-ci-OXL" secondAttribute="bottom" id="uVb-Tu-Gpe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2SE-gH-GRX" firstAttribute="top" secondItem="jv1-b2-wOE" secondAttribute="bottom" constant="5" id="7g0-15-jHa"/>
+                    <constraint firstItem="Cxj-am-Lh5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="90I-Tc-3q4"/>
+                    <constraint firstItem="vhE-AC-cfU" firstAttribute="leading" secondItem="2SE-gH-GRX" secondAttribute="trailing" constant="20" id="H1w-U2-wkI"/>
+                    <constraint firstItem="Cxj-am-Lh5" firstAttribute="leading" secondItem="jv1-b2-wOE" secondAttribute="trailing" constant="10" id="Hby-WV-6Q3"/>
+                    <constraint firstItem="jv1-b2-wOE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="M4S-VT-zsK"/>
+                    <constraint firstAttribute="trailing" secondItem="vhE-AC-cfU" secondAttribute="trailing" constant="20" id="PEP-ZU-2IJ"/>
+                    <constraint firstItem="2SE-gH-GRX" firstAttribute="centerX" secondItem="jv1-b2-wOE" secondAttribute="centerX" id="Xeu-Ke-0ow"/>
+                    <constraint firstAttribute="trailing" secondItem="Cxj-am-Lh5" secondAttribute="trailing" constant="20" id="bHK-Hq-HcC"/>
+                    <constraint firstItem="vhE-AC-cfU" firstAttribute="top" secondItem="Cxj-am-Lh5" secondAttribute="bottom" constant="15" id="g5Y-Z4-Mki"/>
+                    <constraint firstItem="jv1-b2-wOE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gmx-Xw-XuH"/>
+                    <constraint firstAttribute="bottom" secondItem="vhE-AC-cfU" secondAttribute="bottom" constant="10" id="iKt-ZR-ARi"/>
+                    <constraint firstAttribute="bottom" secondItem="2SE-gH-GRX" secondAttribute="bottom" id="xN1-8w-tys"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <point key="canvasLocation" x="147" y="45"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="时钟" width="20" height="20"/>
+    </resources>
+</document>

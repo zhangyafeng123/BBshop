@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessGroupViewController">
+            <connections>
+                <outlet property="collectionView" destination="iA5-g9-xlq" id="m7p-Cz-dQi"/>
+                <outlet property="groupButton" destination="2tx-ez-YaI" id="y2J-4z-lXW"/>
+                <outlet property="moreButton" destination="Hh6-ad-10F" id="NMM-65-HHM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iA5-g9-xlq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aNP-Nb-2ex">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JWa-BM-4yC"/>
+                        <outlet property="delegate" destination="-1" id="Kyg-d1-hV3"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh6-ad-10F">
+                    <rect key="frame" x="0.0" y="617" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="OV4-Em-JDg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="更多拼团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="moreGroupButtonAction:" destination="-1" eventType="touchUpInside" id="FUJ-WP-EP5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tx-ez-YaI">
+                    <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.45934834060000002" blue="0.55438235049999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4aR-zk-3yP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="我也要开团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="beginButton:" destination="-1" eventType="touchUpInside" id="Wb7-Wk-R26"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Hh6-ad-10F" secondAttribute="bottom" id="9nW-ph-aES"/>
+                <constraint firstAttribute="bottom" secondItem="2tx-ez-YaI" secondAttribute="bottom" id="FQJ-S2-1Il"/>
+                <constraint firstItem="2tx-ez-YaI" firstAttribute="top" secondItem="iA5-g9-xlq" secondAttribute="bottom" id="K8N-YJ-2n5"/>
+                <constraint firstItem="iA5-g9-xlq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KsU-vL-2Qb"/>
+                <constraint firstAttribute="trailing" secondItem="2tx-ez-YaI" secondAttribute="trailing" id="cqD-IB-mEg"/>
+                <constraint firstItem="2tx-ez-YaI" firstAttribute="width" secondItem="Hh6-ad-10F" secondAttribute="width" id="jPY-S5-qfC"/>
+                <constraint firstItem="2tx-ez-YaI" firstAttribute="leading" secondItem="Hh6-ad-10F" secondAttribute="trailing" id="mqJ-M0-fke"/>
+                <constraint firstAttribute="trailing" secondItem="iA5-g9-xlq" secondAttribute="trailing" id="nu7-L0-u9E"/>
+                <constraint firstItem="Hh6-ad-10F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r1s-mL-hr9"/>
+                <constraint firstItem="iA5-g9-xlq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="woV-Tq-QsS"/>
+            </constraints>
+            <point key="canvasLocation" x="63" y="-495"/>
+        </view>
+    </objects>
+</document>

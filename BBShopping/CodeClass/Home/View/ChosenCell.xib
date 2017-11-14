@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChosenCell" id="gTV-IL-0wX" customClass="ChosenCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2O-ql-ZSr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥29.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eV-nA-f5o">
+                        <rect key="frame" x="20" y="195" width="170" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="NaZ-0h-EwO"/>
+                            <constraint firstAttribute="width" constant="170" id="PcM-9b-mwz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安心优选进口水果4粒装" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXZ-dX-0gD">
+                        <rect key="frame" x="20" y="155" width="300" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="7Io-6O-edY"/>
+                            <constraint firstAttribute="height" constant="30" id="Bn8-wy-EkJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm9-0m-pdh">
+                        <rect key="frame" x="317" y="187" width="38" height="38"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="8OY-xW-o1q"/>
+                            <constraint firstAttribute="height" constant="38" id="QrM-G5-31p"/>
+                        </constraints>
+                        <state key="normal" image="首页购物车"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="e2O-ql-ZSr" secondAttribute="bottom" id="7lK-x2-6Mg"/>
+                <constraint firstItem="6eV-nA-f5o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="KSV-4i-fih"/>
+                <constraint firstItem="e2O-ql-ZSr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UMl-oH-E8m"/>
+                <constraint firstAttribute="trailing" secondItem="e2O-ql-ZSr" secondAttribute="trailing" id="UP6-j9-p7u"/>
+                <constraint firstAttribute="bottom" secondItem="Vm9-0m-pdh" secondAttribute="bottom" constant="20" id="bT3-pM-xoI"/>
+                <constraint firstItem="6eV-nA-f5o" firstAttribute="top" secondItem="cXZ-dX-0gD" secondAttribute="bottom" constant="10" id="cD1-ve-Hki"/>
+                <constraint firstItem="e2O-ql-ZSr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dh8-NG-KzV"/>
+                <constraint firstAttribute="trailing" secondItem="Vm9-0m-pdh" secondAttribute="trailing" constant="20" id="n0Y-Db-DTu"/>
+                <constraint firstItem="cXZ-dX-0gD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="niZ-2t-7SA"/>
+                <constraint firstAttribute="bottom" secondItem="6eV-nA-f5o" secondAttribute="bottom" constant="20" id="rFz-qD-AcX"/>
+            </constraints>
+            <size key="customSize" width="50" height="64"/>
+            <connections>
+                <outlet property="priceBtn" destination="Vm9-0m-pdh" id="S4d-ya-i2S"/>
+                <outlet property="priceLab" destination="6eV-nA-f5o" id="ULi-fa-JVQ"/>
+                <outlet property="titleLab" destination="cXZ-dX-0gD" id="wbC-JU-TEs"/>
+                <outlet property="topImage" destination="e2O-ql-ZSr" id="WJ2-vB-Yl2"/>
+            </connections>
+            <point key="canvasLocation" x="-339.5" y="-25.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="首页购物车" width="24" height="24"/>
+    </resources>
+</document>

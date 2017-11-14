@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="waitFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpB-KC-kn3">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jnw-zj-vID"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iM5-2a-4CE">
+                    <rect key="frame" x="0.0" y="41" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dJl-fU-ncJ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWk-WD-NI5">
+                    <rect key="frame" x="295" y="47" width="70" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="pcr-K2-LLP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确认收货">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am4-l5-dlA">
+                    <rect key="frame" x="135" y="47" width="70" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="申请售后">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pk2-Fg-NG0">
+                    <rect key="frame" x="0.0" y="90" width="375" height="10"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Tc8-sr-Agz"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b21-y8-7f4">
+                    <rect key="frame" x="215" y="47" width="70" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="查看物流">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iM5-2a-4CE" firstAttribute="top" secondItem="cpB-KC-kn3" secondAttribute="bottom" constant="1" id="2ZE-1z-jao"/>
+                <constraint firstItem="wWk-WD-NI5" firstAttribute="width" secondItem="Am4-l5-dlA" secondAttribute="width" id="8q2-8d-zni"/>
+                <constraint firstItem="cpB-KC-kn3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Crj-bw-hO3"/>
+                <constraint firstItem="wWk-WD-NI5" firstAttribute="top" secondItem="iM5-2a-4CE" secondAttribute="bottom" constant="5" id="I8i-wL-x3H"/>
+                <constraint firstItem="b21-y8-7f4" firstAttribute="leading" secondItem="Am4-l5-dlA" secondAttribute="trailing" constant="10" id="IM0-9K-zCX"/>
+                <constraint firstAttribute="trailing" secondItem="wWk-WD-NI5" secondAttribute="trailing" constant="10" id="KSo-2h-r6n"/>
+                <constraint firstAttribute="trailing" secondItem="iM5-2a-4CE" secondAttribute="trailing" id="SCd-ye-VeY"/>
+                <constraint firstItem="wWk-WD-NI5" firstAttribute="centerY" secondItem="Am4-l5-dlA" secondAttribute="centerY" id="Sgl-TB-cWd"/>
+                <constraint firstItem="iM5-2a-4CE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vw6-ir-ZOJ"/>
+                <constraint firstItem="b21-y8-7f4" firstAttribute="width" secondItem="Am4-l5-dlA" secondAttribute="width" id="XQK-QZ-UrB"/>
+                <constraint firstAttribute="trailing" secondItem="Pk2-Fg-NG0" secondAttribute="trailing" id="XZP-WD-jd7"/>
+                <constraint firstAttribute="trailing" secondItem="cpB-KC-kn3" secondAttribute="trailing" constant="20" id="ZGC-ug-Wej"/>
+                <constraint firstItem="cpB-KC-kn3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dJc-Q4-mZO"/>
+                <constraint firstAttribute="bottom" secondItem="Pk2-Fg-NG0" secondAttribute="bottom" id="fly-ur-lu7"/>
+                <constraint firstItem="b21-y8-7f4" firstAttribute="height" secondItem="Am4-l5-dlA" secondAttribute="height" id="ilm-f2-DNU"/>
+                <constraint firstItem="Pk2-Fg-NG0" firstAttribute="top" secondItem="wWk-WD-NI5" secondAttribute="bottom" constant="5" id="jjB-rQ-UEI"/>
+                <constraint firstItem="wWk-WD-NI5" firstAttribute="leading" secondItem="b21-y8-7f4" secondAttribute="trailing" constant="10" id="lK2-aj-9Lp"/>
+                <constraint firstItem="wWk-WD-NI5" firstAttribute="height" secondItem="Am4-l5-dlA" secondAttribute="height" id="okq-1B-hGI"/>
+                <constraint firstItem="Pk2-Fg-NG0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="or1-nc-4y5"/>
+                <constraint firstItem="b21-y8-7f4" firstAttribute="centerY" secondItem="Am4-l5-dlA" secondAttribute="centerY" id="qfz-PA-cXO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstbutton" destination="Am4-l5-dlA" id="TEC-jG-sGe"/>
+                <outlet property="lab" destination="cpB-KC-kn3" id="xvn-Ui-UAF"/>
+                <outlet property="secondbutton" destination="b21-y8-7f4" id="Uql-Nz-PXN"/>
+                <outlet property="thridbutton" destination="wWk-WD-NI5" id="cFN-Oz-5b0"/>
+            </connections>
+            <point key="canvasLocation" x="-112" y="-3"/>
+        </view>
+    </objects>
+</document>

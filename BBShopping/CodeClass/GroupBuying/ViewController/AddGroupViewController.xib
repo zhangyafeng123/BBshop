@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddGroupViewController">
+            <connections>
+                <outlet property="collectionview" destination="nsL-L3-qRU" id="Shb-ci-qGW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVZ-09-SNS">
+                    <rect key="frame" x="0.0" y="617" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FYv-fe-8QQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="更多拼团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="moreButtonaction:" destination="-1" eventType="touchUpInside" id="dKO-Vf-LW8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnz-KL-Wwu">
+                    <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.46098798369999999" blue="0.440446803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VRc-Q1-nnc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="我也要参团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addbuttonaction:" destination="-1" eventType="touchUpInside" id="0bG-qM-Z7L"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nsL-L3-qRU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ofl-v0-2I4">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VYr-EA-LLK"/>
+                        <outlet property="delegate" destination="-1" id="nVt-cH-cSG"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wnz-KL-Wwu" firstAttribute="leading" secondItem="BVZ-09-SNS" secondAttribute="trailing" id="Bpg-ev-p7J"/>
+                <constraint firstItem="wnz-KL-Wwu" firstAttribute="top" secondItem="nsL-L3-qRU" secondAttribute="bottom" id="E7q-Y8-alf"/>
+                <constraint firstItem="BVZ-09-SNS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KWT-uy-pT0"/>
+                <constraint firstItem="nsL-L3-qRU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aB6-br-waP"/>
+                <constraint firstItem="nsL-L3-qRU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="brN-xu-m7J"/>
+                <constraint firstAttribute="trailing" secondItem="nsL-L3-qRU" secondAttribute="trailing" id="e4Z-24-CFY"/>
+                <constraint firstItem="wnz-KL-Wwu" firstAttribute="width" secondItem="BVZ-09-SNS" secondAttribute="width" id="eeP-iO-Pgv"/>
+                <constraint firstAttribute="bottom" secondItem="BVZ-09-SNS" secondAttribute="bottom" id="nCU-Hd-igU"/>
+                <constraint firstAttribute="trailing" secondItem="wnz-KL-Wwu" secondAttribute="trailing" id="pmM-R2-EEI"/>
+                <constraint firstAttribute="bottom" secondItem="wnz-KL-Wwu" secondAttribute="bottom" id="zWk-pE-a0k"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="47.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoingGroupViewController">
+            <connections>
+                <outlet property="collectionview" destination="nSP-0s-aKw" id="Bgy-jt-vMv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nSP-0s-aKw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M35-GL-BKj">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rQT-v9-5xN"/>
+                        <outlet property="delegate" destination="-1" id="hUc-Zi-Izu"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt6-ea-sQH">
+                    <rect key="frame" x="0.0" y="617" width="125" height="50"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.80392156859999997" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8mx-tN-H5m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="更多拼团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="moreButton:" destination="-1" eventType="touchUpInside" id="27Z-il-v5y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4po-AT-KUT">
+                    <rect key="frame" x="125" y="617" width="125" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.45934834060000002" blue="0.55438235049999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="kRC-0N-6uA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="分享给好友">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareButton:" destination="-1" eventType="touchUpInside" id="221-Pp-m7Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byw-yn-JgH">
+                    <rect key="frame" x="250" y="617" width="125" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TxC-Kv-Kgy"/>
+                    </constraints>
+                    <state key="normal" title="我还要参团">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cantuanButton:" destination="-1" eventType="touchUpInside" id="SI3-mq-wbs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4po-AT-KUT" firstAttribute="width" secondItem="Rt6-ea-sQH" secondAttribute="width" id="0D0-oz-vw6"/>
+                <constraint firstItem="nSP-0s-aKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3ie-CJ-eHg"/>
+                <constraint firstItem="nSP-0s-aKw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="430-gC-HBc"/>
+                <constraint firstItem="byw-yn-JgH" firstAttribute="top" secondItem="nSP-0s-aKw" secondAttribute="bottom" id="6b3-D0-3Vp"/>
+                <constraint firstItem="Rt6-ea-sQH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TXT-sr-Rsf"/>
+                <constraint firstItem="4po-AT-KUT" firstAttribute="leading" secondItem="Rt6-ea-sQH" secondAttribute="trailing" id="XZW-LW-p8N"/>
+                <constraint firstItem="byw-yn-JgH" firstAttribute="leading" secondItem="4po-AT-KUT" secondAttribute="trailing" id="esW-xf-vIE"/>
+                <constraint firstAttribute="trailing" secondItem="nSP-0s-aKw" secondAttribute="trailing" id="f42-iz-lgH"/>
+                <constraint firstAttribute="bottom" secondItem="byw-yn-JgH" secondAttribute="bottom" id="iBO-KZ-kbw"/>
+                <constraint firstAttribute="trailing" secondItem="byw-yn-JgH" secondAttribute="trailing" id="l5T-Lb-EMB"/>
+                <constraint firstAttribute="bottom" secondItem="4po-AT-KUT" secondAttribute="bottom" id="m5k-en-VN1"/>
+                <constraint firstItem="byw-yn-JgH" firstAttribute="width" secondItem="Rt6-ea-sQH" secondAttribute="width" id="zc5-K8-1fL"/>
+                <constraint firstAttribute="bottom" secondItem="Rt6-ea-sQH" secondAttribute="bottom" id="zpj-x2-84C"/>
+            </constraints>
+            <point key="canvasLocation" x="-122" y="37"/>
+        </view>
+    </objects>
+</document>

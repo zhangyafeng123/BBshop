@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  BBShopping
+//
+//  Created by mibo02 on 17/1/16.
+//  Copyright © 2017年 mibo02. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <IQKeyboardManager.h>
+#import "UIView+Animation.h"
+#import "getpersonInfoRequest.h"
+#import "JJNumberReq.h"
+#import "ShopAddRequest.h"
+#import "MJRefresh.h"
+#import "PPNetworkHelper.h"
+#import <AFNetworking.h>
+#import "Header.h"
+#import "UIBarButtonItem+Extension.h"
+#import "ZLabel.h"
+#import "PriceLine.h"
+#import <SDCycleScrollView.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "Masonry.h"
+#import "ColorString.h"
+#import "SuspendHelper.h"
+#import "MBProgressHUD+MJ.h"
+#import "Factory.h"
+#import "UserInfoManager.h"
+#import "UIView+Extension.h"
+#import <HCSStarRatingView.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import "AddressRequest.h"
+#import "ButtonBorderColorManager.h"
+#import "NSString+Category.h"
+#import <MZTimerLabel.h>
+#import "UIViewController+FullScreen.h"
+#endif /* PrefixHeader_pch */
